@@ -20,5 +20,5 @@ iface eth0 inet dhcp
 # how can i use it?
 this script change your mac address and ip address using the network protocol DHCP, without down your internet, you can automatize it in crontabs, using crontab -e to add a new script, is very util to avoid attacks from a remote computer that can steal your ip address and mac address.
 use it to avoid packet injections and DOS attacks.
-
+don´t use static ip anymore!
 
