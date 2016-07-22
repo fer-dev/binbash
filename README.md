@@ -9,11 +9,11 @@ and its done.
 
 add this lines to the file:
 
-#The primary network interface
-#allow-hotplug eth0
-#iface eth0 inet dhcp
+<#The primary network interface
+<#allow-hotplug eth0
+<#iface eth0 inet dhcp
 
-#Dhcp IP address
+<#Dhcp IP address
 auto eth0
 iface eth0 inet dhcp
 
