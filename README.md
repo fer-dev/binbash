@@ -7,20 +7,13 @@ and its done.
 
 -->edit the file /etc/network/interfaces putting this code
 
-"# This file describes the network interfaces available on your system
-"# and how to activate them. For more information, see interfaces(5).
+add this lines to the file:
 
-source /etc/network/interfaces.d/*
+#The primary network interface
+#allow-hotplug eth0
+#iface eth0 inet dhcp
 
-"# The loopback network interface
-auto lo
-iface lo inet loopback
-
-"#The primary network interface
-"#allow-hotplug eth0
-"#iface eth0 inet dhcp
-
-"#Dhcp IP address
+#Dhcp IP address
 auto eth0
 iface eth0 inet dhcp
 
