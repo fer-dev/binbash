@@ -4,19 +4,19 @@
 #Configuracion de  para resolver direcciones ip de forma dinamica
 #FASE 1
 echo "========================================================================"
-#activar smbd 
+#run smbd 
 /etc/init.d/smbd start
-#bajar la red para configurarla
+#start network config
 ifdown eth0
 #FASE 2 
 echo "========================================================================"
-#cambia las direcciones mac
+#change/spoof mac
 macchanger -r eth0
 macchanger -a eth0 
-#el vendor y direcciones mac hana cambiado
+#change vendor and mac address
 #FASE 3
 echo "========================================================================"
-#se sube la red para actualizar la nueva configuracion
+#finish config and show ip adress it have to change.
 ifup eth0  | ifconfig | grep inet
 #termina fase 3
 echo "========================================================================" 
