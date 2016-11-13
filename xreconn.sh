@@ -10,6 +10,8 @@ function lines()
         printf "0%.s---------------------->>>\e[0m"
         printf "\e[0;39m"
 }
+#confirutacion del router
+echo nameserver 192.168.0.1 > /etc/resolv.conf
 #dash
 lines
         service smbd start
